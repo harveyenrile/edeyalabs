@@ -1,0 +1,242 @@
+.group:before,
+.group:after
+  content: ""
+  display: table
+.group:after
+  clear: both
+.group 
+  zoom: 1
+
+body
+  font-family: 'Roboto', sans-serif
+  font-weight: 300
+  background: #232323
+  color: #fff
+  line-height: 1.6
+  cursor: default
+
+section
+  position: relative
+  z-index: 10
+  text-align: center
+  h4
+    opacity: .4
+    font-weight: 100
+    position: relative
+    top: -3px
+.cell
+  padding: 30px
+.text-left
+  text-align: left
+.text-right
+  text-align: right
+.top-section
+  min-height: 450px
+#bgoverlay
+  background-image: image-url('bg_pattern_overlay.png')
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  z-index: 1
+  display: block
+#bgStretch
+  position: fixed
+  left: 0
+  top: 0
+  z-index: -9999
+  margin: 0
+  padding: 0
+  height: 800px
+  width: 100%
+  background-image: image-url('bg.jpg')
+  background-repeat: no-repeat
+  background-size: 100%
+  img
+    width: 100%
+.about-section
+  background: #4aa8c7
+  text-align: center
+  overflow: hidden
+.contact-section
+  overflow: hidden
+.cell
+  h3
+    font-size: 24px
+    text-transform: uppercase
+    margin-bottom: 10px
+    font-family: 'Montserrat', sans-serif
+    text-shadow: 3px 3px 0 rgba(0,0,0,.1)
+    letter-spacing: 1px
+
+.team-section
+  background: #232323
+  overflow: hidden
+.top-nav
+  margin: 40px 0 80px
+  text-align: center
+  &>a
+    display: inline-block
+    text-transform: uppercase
+    color: #fff
+    padding: 8px 12px
+    border-radius: 3px
+    transition: all .1s ease-in-out
+    margin: 0 25px
+    font-size: 14px
+    font-weight: 700
+    position: relative
+    z-index: 1000
+    &.active
+      background: #fff
+      color: #434343 
+    &:hover
+      background: #fff
+      color: #434343
+.logo
+  width: 296px
+  height: 61px
+  display: inline-block
+  background-image: image-url('logo.png')
+  margin-top: 20px
+h1.main
+  font-size: 70px
+  margin-top: 100px
+  /* font-weight: 100
+  text-transform: uppercase
+  text-shadow: 0 1px 2px rgba(0,0,0,.5)
+  font-family: 'Montserrat', sans-serif
+  text-shadow: 4px 4px 0 rgba(250,210,116,.2)
+  letter-spacing: 1px
+h2.desc
+  font-weight: 100
+  font-size: 18px
+  text-shadow: 0 1px 2px rgba(0,0,0,.5)
+.block
+  margin: 50px 0
+.tree
+  position: absolute
+  width: 1px
+  height: 100%
+  border-left: 1px solid #fff
+  left: 50%
+  top: 0
+  margin-top: 100px
+  opacity: .4
+  .ball
+    width: 20px
+    height: 20px
+    background-color: #fff
+    border-radius: 50%
+    margin-left: -10px
+
+.team-container
+  display: inline-block
+  margin: 5px
+  background: #999
+  overflow: hidden
+  height: 300px
+  width: 250px
+  position: relative
+  z-index: 10
+  .team-data-overlay
+    position: absolute
+    bottom: 0
+    width: 100%
+    text-align: left
+    left: 0
+    padding: 10px
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0)), to(rgba(0,0,0,.2)))
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2))
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2))
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2))
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2))
+    font-style: italic
+    font-size: 14px
+    font-weight: 700
+    h3
+      font-size: 20px
+      font-weight: 100
+      font-style: normal
+
+.form
+  fieldset
+    margin: 10px 0
+  input[type=text],
+  input[type=email],
+  textarea
+    opacity: .7
+    border: none
+    padding: 12px
+    font-size: 16px
+    width: 100%
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    outline: none
+    border: 1px solid transparent
+    transition: all .1s ease-in-out
+    &:focus
+      opacity: 1
+    &.error
+      border-color: #f92d2d
+  textarea
+    resize: none
+    min-height: 100px
+
+button.btn-submit
+  padding: 15px 50px
+  background: #f86c3b
+  border: none
+  color: #fff
+  font-size: 16px
+  box-shadow: 0 2px 0 #c0390a
+  cursor: pointer
+  transition: all .1s ease-in-out
+  position: relative
+  &:active
+    background-color: #c0390a
+    top: 1px
+
+.contact-email
+  margin: 15px 0
+  display: block
+  text-decoration: underline
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) 
+
+  .tree
+    display: none
+  h1.main
+    margin-top: 20px
+    font-size: 40px
+    margin-bottom: 30px
+  #bgStretch
+    background-size: 400%
+    background-position: center 10%
+    height: 600px
+  .block
+    margin: 20px 0
+  .cell
+    padding: 15px
+  .top-nav
+    margin: 10px 0 20px
+    text-align: center
+    a
+      display: block
+  button.btn-submit
+    width: 100%
+  .top-section
+    min-height: 400px
+  .logo
+    margin: 10px 0 0
+
+
+  
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+

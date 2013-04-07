@@ -1,0 +1,121 @@
+#bgoverlay
+%nav.top-nav.fixed
+  %a#navHome
+    Home
+  %a#navAbout
+    what we do
+  %a#navTeam
+    who we are
+  %a#navContact
+    contact
+%section.top-section#sectionHome
+  .container 
+    .row
+      .twelvecol.last
+        
+        .logo
+        %h1.main
+          We extend your team
+        %h2.desc
+          We partner with digital agencies and IT Outsourcing companies worldwide to help them deliver their web projects.
+  
+%section.about-section#sectionAbout
+  .container 
+    .row 
+      .twelvecol.last
+        .block
+          %h4
+            WHAT WE DO
+        .tree
+          .ball
+        .block.group
+          .sixcol
+            .cell.text-left
+              %h3 Web Development
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quod, aut, consectetur error aliquam dolorem sequi nam corporis doloremque praesentium autem ad rerum nesciunt. Voluptatem, adipisci, blanditiis, rerum, quisquam modi molestiae ipsum soluta unde provident incidunt laudantium ratione molestias tempora ea rem placeat perspiciatis distinctio. Commodi fuga accusamus a placeat!
+          .sixcol.last
+            .cell.text-left
+              %h3 E-Commerce
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolorum, voluptate modi reiciendis aspernatur natus dolor earum doloribus cum neque odio accusantium non cupiditate soluta porro officiis praesentium nulla quam at laborum harum quidem fugit consectetur inventore incidunt recusandae iste ea quod iure possimus. Consequatur sed ipsam suscipit.
+          .group
+            .sixcol
+              .cell.text-left
+                %h3 Design
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quod, aut, consectetur error aliquam dolorem sequi nam corporis doloremque praesentium autem ad rerum nesciunt. Voluptatem, adipisci, blanditiis, rerum, quisquam modi molestiae ipsum soluta unde provident incidunt laudantium ratione molestias tempora ea rem placeat perspiciatis distinctio. Commodi fuga accusamus a placeat!
+            .sixcol.last
+              .cell.text-left
+                %h3 Product Development
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolorum, voluptate modi reiciendis aspernatur natus dolor earum doloribus cum neque odio accusantium non cupiditate soluta porro officiis praesentium nulla quam at laborum harum quidem fugit consectetur inventore incidunt recusandae iste ea quod iure possimus. Consequatur sed ipsam suscipit.
+
+%section.team-section#sectionTeam
+  .container 
+    .row 
+      .twelvecol.last 
+        .block
+          %h4
+            WHO WE ARE
+        .tree
+          .ball
+        .block.group
+          .twelvecol.last
+            .block.group
+              .team-container
+                .team-data-overlay
+                  %h3
+                    Harry
+                  Project Manager
+              .team-container
+                .team-data-overlay
+                  %h3
+                    Vince
+                  Ruby Developer
+              .team-container
+                .team-data-overlay
+                  %h3
+                    Harvey
+                  Web Designer / UI
+            .block.group
+              .sixcol
+                .cell.text-left
+                  %h3 Small and Focused
+                  We're small and easy to integrate, we don't take on many projects at once. We work closely with our clients and people involved, build relationships and put them on our team to help get feedback faster and move forward together. 
+              .sixcol.last
+                .cell.text-left
+                  %h3 Fast Workflow
+                  With solid experience working in the industry, we've come to learn how to incorporate different approaches to working fast and efficient with our team members to deliver projects fast. 
+
+%section.contact-section#sectionContact
+  .container 
+    .row 
+      .twelvecol.last 
+        .block 
+          %h4 
+            CONTACT US
+          .tree
+            .ball
+          .block.group
+            .sixcol
+              .cell.text-left
+                %h3 Get in touch
+                You can say hello or if you're interested to work with us and help you out on your projects, send us a message or email us
+                %span.contact-email
+                  hello@edeyalabs.com
+            .sixcol.last
+              .cell.text-left
+                .form
+                  %fieldset
+                    %input.error{ :type => 'email', :placeholder => 'Your Email' }
+                  %fieldset
+                    %input{ :type => 'text', :placeholder => 'Your Name' }
+                  %fieldset
+                    %textarea{ :placeholder => 'Message' }
+                  %fieldset.text-right
+                    %button.btn-submit
+                      Send
+
+
+  
+#bgStretch
+  / = image_tag 'bg.jpg'
+
+      
