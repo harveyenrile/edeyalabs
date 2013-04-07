@@ -99,6 +99,8 @@ section
   height: 61px
   display: inline-block
   background-image: image-url('logo.png')
+  background-repeat: no-repeat
+  background-position: 0 50%
   margin-top: 20px
 h1.main
   font-size: 70px
@@ -235,6 +237,12 @@ button.btn-submit
   .logo
     margin: 10px 0 0
 
+@media only screen and (max-width: 479px)
+  .logo
+    width: 70%
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    background-size: 100%
 
   
 
