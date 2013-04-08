@@ -20,7 +20,7 @@ $(document).ready(function(){
     }, 2000); 
   });
  
-
+  $('.bxslider').bxSlider();
   
   // $(window).scroll(function(){
   //   $(".top-nav").removeClass("fixed");
