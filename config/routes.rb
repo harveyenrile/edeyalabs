@@ -1,6 +1,6 @@
 Edeyalabs::Application.routes.draw do
   root :to => "home#index"
-
+  match '/projects' => 'home#projects'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
